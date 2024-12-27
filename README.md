@@ -1,6 +1,11 @@
 # VITE_SHOP
 2024 RENEWAL SHOP
 
+- 미 완성
+- 관리자 페이지 수정 중
+- CSS 더 다듬어야 함
+- JAVASCRIPT가 더 재미또
+
 ----
 
 
