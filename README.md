@@ -4,9 +4,7 @@
 - 미 완성
 - 관리자 페이지 수정 중
 - CSS 더 다듬어야 함
+- 관리자 권한 role = 1 / 일반 유저 role = 0
+- npm run dev
 
 ----
-
-
-https://github.com/user-attachments/assets/01f1b1f2-0617-4f53-87f0-dd5f22515b12
-
