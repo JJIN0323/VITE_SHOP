@@ -1,0 +1,63 @@
+Parser.js 게임 만들기 ~ 미로 게임 !
+
+
+const config = {
+  type: Phaser.AUTO,
+  width: 800,
+  height: 600,
+  physics: {
+    default: 'arcade'
+  },
+  scene: {
+    preload: preload,
+    create: create,
+    update: update
+  }
+};
+
+const game = new Phaser.Game(config);
+
+function preload() {
+  this.load.image('tile', 'path/to/tile.png');
+  this.load.image('enemy', 'path/to/enemy.png');
+  this.load.image('tower', 'path/to/tower.png');
+}
+
+function create() {
+  // 맵 생성
+  const tileSize = 100;
+  for (let i = 0; i < 6; i++) {
+    for (let j = 0; j < 8; j++) {
+      this.add.image(j * tileSize + tileSize / 2, i * tileSize + tileSize / 2, 'tile');
+    }
+  }
+
+  // 적 그룹 생성
+  this.enemies = this.physics.add.group();
+
+  // 웨이브 타이머
+  this.time.addEvent({
+    delay: 2000,
+    callback: () => {
+      const enemy = this.enemies.create(0, 100, 'enemy');
+      enemy.setVelocity(100, 0);
+    },
+    loop: true
+  });
+
+  // 타워 배치
+  this.input.on('pointerdown', (pointer) => {
+    const x = Math.floor(pointer.x / 100) * 100 + 50;
+    const y = Math.floor(pointer.y / 100) * 100 + 50;
+    this.add.image(x, y, 'tower');
+  });
+}
+
+function update() {
+  // 적이 화면 밖으로 나가면 제거
+  this.enemies.children.iterate((enemy) => {
+    if (enemy.x > 800) {
+      enemy.destroy();
+    }
+  });
+}

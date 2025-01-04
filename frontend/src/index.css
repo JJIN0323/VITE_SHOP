@@ -1,0 +1,342 @@
+@import "react-image-gallery/styles/css/image-gallery.css"; /* Import styles for React Image Gallery */
+
+/* BODY styling */
+body {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    overflow-x: hidden; /* Prevent horizontal scrollbar */
+}
+
+/* SCROLLBAR styling */
+
+/* Default style for the entire scrollbar */
+::-webkit-scrollbar {
+    width: 12px; /* Set the width of the vertical scrollbar */
+    height: 12px; /* Set the height of the horizontal scrollbar */
+}
+
+/* Style for the scrollbar track (background) */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Set the background color of the scrollbar track */
+    border-radius: 10px; /* Add rounded edges to the scrollbar track */
+}
+
+/* Default style for the scrollbar thumb (handle) */
+::-webkit-scrollbar-thumb {
+    background: #888; /* Set the default color of the scrollbar handle */
+    border-radius: 10px; /* Add rounded edges to the scrollbar handle */
+}
+
+/* Style for the scrollbar thumb when hovered */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Change the color of the scrollbar handle on hover */
+}
+
+/* Style for the scrollbar corners */
+::-webkit-scrollbar-corner {
+    background: #f1f1f1; /* Set the background color of the scrollbar corners */
+}
+
+/* CONTAINER styling */
+main {
+    padding: 0 3rem 3rem 3rem; /* Add padding to the container */
+}
+
+hr {
+    margin: 2rem 0; /* Add vertical spacing around horizontal lines */
+}
+
+button:hover {
+    background: #282828; /* Set background color on hover */
+    color: #ffffff; /* Set text color on hover */
+}
+
+form.uploadPage {
+    width: 90vw;
+}
+
+form.uploadPage > * > input {
+    width: 90vw;
+}
+
+/* NAVIGATION styling */
+
+/* Default style for the navigation bar */
+.nav {
+    position: fixed; /* Fix the navigation bar to the top */
+    top: 0; /* No margin at the top */
+    left: 0; /* No margin on the left */
+    width: 100%; /* Set width to cover the full screen */
+    z-index: 9999; /* Ensure it stays on top of other elements */
+    background-color: #fff; /* Set the background color to white */
+}
+
+/* Navigation menu styling */
+.navMenu {
+    display: flex; /* Use flexbox for horizontal alignment */
+    justify-content: center; /* Center align menu items */
+    font-size: 1.2rem; /* Set the font size of menu items */
+}
+
+/* Styling for navigation menu items */
+.navMenu > li {
+    padding-right: 1.2rem; /* Add spacing between menu items */
+}
+
+/* Styling for the logo and menu */
+.logoNmenu {
+    width: 100%; /* Use the full width */
+    height: 5rem; /* Set the height */
+    font-size: 2rem; /* Set the font size for the logo and menu */
+    font-weight: bold; /* Make text bold */
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between logo and menu */
+    align-items: baseline; /* Align items along the baseline */
+    padding: 0.5rem 2rem; /* Add inner padding */
+}
+
+.search {
+    margin: 1rem 0 3rem 0; /* Add margin around the search area */
+}
+
+.bold {
+    font-weight: bold; /* Make text bold */
+}
+
+.marginTopo {
+    margin-top: 7rem; /* Add top margin for spacing */
+}
+
+.skillBtn {
+    margin-right: 2rem; /* Add right margin to buttons */
+}
+
+.moreBtn {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center align the button */
+    margin: 3rem 0; /* Add vertical margin */
+}
+
+/* CONTACT styling */
+.flexContact {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center align the form */
+    text-align: center; /* Center align the text */
+    margin-top: 7rem; /* Add top margin for spacing */
+}
+
+.title h1 {
+    font-size: 1rem; /* Set the font size of titles */
+    line-height: 1.5rem; /* Set the line height for titles */
+}
+
+label > .name {
+    font-size: 0.8rem; /* Set the font size for labels */
+    line-height: 1rem; /* Set the line height for labels */
+}
+
+/* Input field styling */
+.inputFeild {
+    margin-bottom: 1rem; /* Add bottom margin for spacing */
+    border: 1px solid #7f7e7b; /* Set border color and thickness */
+    padding: 0 0.5rem; /* Add horizontal padding */
+    line-height: 2rem; /* Set the height of the input field */
+}
+
+/* Submit button styling */
+.submit {
+    margin-bottom: 1rem; /* Add bottom margin to the submit button */
+}
+
+/* Styling for question text */
+p.question {
+    letter-spacing: 0.2rem; /* Increase letter spacing for readability */
+}
+
+/* Styling for links on hover */
+p > a:hover {
+    text-decoration: underline; /* Underline links on hover */
+}
+
+/* FOOTER styling */
+.footer {
+    text-align: center; /* Center align footer content */
+}
+/* FOOTER styling */
+.footer {
+    text-align: center; /* Center align footer content */
+}
+
+.ask {
+    margin: 1rem 0 0.5rem;
+}
+
+/* CAROUSEL styling */
+
+/* Carousel container styling */
+.carousel {
+    width: 100%; /* Set the carousel width to full screen */
+    height: 100% !important; /* Force the carousel height to full */
+}
+
+/* Hide carousel thumbnails */
+.carousel .thumbs {
+    display: none !important; /* Hide thumbnail navigation elements */
+}
+
+/* Hide carousel status info */
+.carousel-status {
+    display: none; /* Hide the status information of the carousel */
+}
+
+/* CARDITEM styling */
+
+/* Styling for card image container */
+.cardImg {
+    display: inline-block; /* Set inline block layout */
+    width: 23%; /* Set width of each card */
+    margin-right: 2rem; /* Add spacing between cards */
+    margin-bottom: 2rem; /* Add bottom margin for vertical spacing */
+    text-align: center; /* Center align content inside the card */
+    border: 1px solid #eff0ef; /* Set light gray border around cards */
+}
+
+/* Styling for the last card image */
+.cardImg:last-child {
+    margin: 0; /* Remove margin for the last card */
+}
+
+/* Styling for card titles */
+.cardImg > * > .name {
+    color: #282828; /* Set the text color to dark gray */
+    font-size: 1.2rem; /* Set font size for card titles */
+    padding: 1rem 1rem; /* Add padding around the title */
+    font-weight: bold; /* Make card titles bold */
+    text-overflow: ellipsis; /* Show "..." for overflowing text */
+    white-space: nowrap; /* Prevent line breaks for titles */
+    overflow: hidden; /* Hide overflowing text */
+}
+
+/* Styling for card descriptions */
+.cardImg > * > .description {
+    color: #888; /* Set text color for descriptions */
+    display: -webkit-box; /* Use flexbox for layout */
+    -webkit-line-clamp: 3; /* Limit descriptions to 3 lines */
+    -webkit-box-orient: vertical; /* Set vertical content orientation */
+    text-overflow: ellipsis; /* Show "..." for overflowing descriptions */
+    overflow: hidden; /* Hide overflowing content */
+    padding: 0 1rem; /* Add horizontal padding */
+}
+
+/* Styling for card prices */
+.cardImg > * > .price {
+    padding-top: 1rem; /* Add top padding above the price */
+    font-weight: bold; /* Make the price bold */
+}
+
+/* CARTPAGE styling */
+
+/* Styling for cart images */
+.cartImg {
+    width: 5rem; /* Set the width of the cart images */
+    max-height: 19rem;
+}
+
+/* DROPZONE styling */
+
+/* Styling for the dropzone container */
+.dropzone {
+    min-width: 18rem; /* Set minimum width for the dropzone */
+    min-height: 10rem; /* Set minimum height for the dropzone */
+    border: 1px dotted #7f7e7b; /* Add a dotted border */
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center align content horizontally */
+    align-items: center; /* Center align content vertically */
+    margin-bottom: 2rem; /* Add bottom margin for spacing */
+}
+
+/* Styling for the image zone inside the dropzone */
+.imageZone {
+    max-width: 20rem; /* Set maximum width for images in the dropzone */
+}
+
+/* Styling for individual images inside the dropzone */
+.imageView {
+    margin: 2rem 0; /* Add vertical margin around the images */
+    width: 100%; /* Set the image width to full */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* PRODUCT DETAIL styling */
+
+/* Styling for the product image section */
+.productImg {
+    display: inline-block; /* Set inline block layout */
+    width: 40%; /* Set the width for product images */
+}
+
+/* Styling for the product information section */
+.productInfo {
+    display: inline-block; /* Set inline block layout */
+    width: 55%; /* Set the width for product info */
+    vertical-align: top; /* Align content to the top */
+    padding: 4rem 0; /* Add vertical padding */
+}
+
+/* ADMIN */
+
+/* Styling for the admin side menu */
+.adminSideMenu {
+    display: inline-block; /* Set inline block layout */
+    width: 20%; /* Set the width for the admin menu */
+}
+
+/* Styling for the list inside the admin side menu */
+.adminSideMenu > ul {
+    content: '-'; /* Add default bullet content */
+    padding: 3rem 0; /* Add vertical padding around the list */
+}
+
+/* Styling for individual items in the admin side menu */
+.adminSideMenu > ul > li {
+    font-size: 1rem; /* Set font size for menu items */
+    line-height: 1rem; /* Set line height */
+    font-weight: bold; /* Make menu items bold */
+    margin-bottom: 1rem; /* Add bottom margin for spacing */
+}
+
+/* Styling for the admin graph container */
+.adminGraph {
+    display: inline-block; /* Set inline block layout */
+    width: 80%; /* Set the width for the graph container */
+    text-align: center; /* Center align the graph content */
+}
+
+.goTo {
+    position: absolute;
+    bottom: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.deleteTableTitle {
+    width: 60% !important;
+    max-width: 60% !important;
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.deleteTablePrice {
+    width: 15% !important;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.deleteTableBtn {
+    width: 15% !important;
+    border: 1px solid #ddd;
+}
